@@ -1,0 +1,60 @@
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+  /* outline: 1px red solid; */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  background: white;
+}
+
+/* Element Styles */
+
+header {
+
+}
+
+form {
+  max-width: 360px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+fieldset{
+  border: none;
+}
+
+
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  background: whitesmoke;
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  padding: 15px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin: 0 .75em 1em 0;
+}
+
+/* Class Styles */
+.bolder{
+  margin-top:1em;
+  font-size: 1.25em;
+  font-weight: bold;
+}
