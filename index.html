@@ -4,14 +4,17 @@
   <meta charset="utf-8">
   <title>Andrew Gilman's Registration Form</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"></head>
   <body>
 
     <header>
-      <h1>The Code Review</h1>
-      <h2 class="bolder">Signup for our newsletter</h2>
-      <p>Get the latest news on how your code is doing right in your inbox</p>
+      <h1 class="formhead">The Code Review</h1>
+      <div class="instructions">
+        <h2>Signup for our newsletter</h2>
+        <p class="headline">Get the latest news on how your code is doing right in your inbox</p>
+      </div>
     </header>
 
 
@@ -19,9 +22,9 @@
       <fieldset>
       <legend class="bolder">Contact Information</legend>
       <label for="name">Full Name</label>
-      <input type="text" id="name" name="user_name">
+      <input type="text" id="name" name="user_name" placeholder="Required">
       <label for="mail">E-mail Address</label>
-      <input type="email" id="mail" name="user_email">
+      <input type="email" id="mail" name="user_email" placeholder="Required">
       <label for="phone">Phone Number</label>
       <input type="tel" id="phone" name="user_phone">
       <label for="address">Street Address</label>
@@ -83,13 +86,13 @@
         <option value="WI">Wisconsin</option>
         <option value="WY">Wyoming</option>
       </select>
-      <label for="zip">Zip Code</label>
-      <input type="tel" id="zip" name="user_zip">
+      <label for="zip">Zip Code</label><br>
+      <input type="text" id="zip" name="user_zip">
       </fieldset>
 
       <fieldset>
       <legend class="bolder">Newsletter</legend>
-      <label>Select the newsletter you would like to receive</label><br>
+      <p>Select the newsletter you would like to receive</p><br>
       <input type="checkbox" id="htmlnews" value="htmlnews" name="user_newsselect">
       <label for=htmlnews>HTML News</label><br>
       <input type="checkbox" id="cssnews" value="cssnews" name="user_newsselect">
@@ -104,8 +107,9 @@
       <label for="othertopics">Other topics you'd like to hear about</label>
       <textarea id="othertopics" name="user_othertopics"></textarea>
       </fieldset>
-
-      <button type="submit">Sign Up</button>
+      <div class="submit">
+        <button type="submit">Sign Up</button>
+      </div>
 
     </form>
     <footer>

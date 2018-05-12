@@ -12,11 +12,11 @@ body {
   background: white;
 }
 
-/* Element Styles */
-
-header {
-
+p{
+  margin: 0;
 }
+
+/* Element Styles */
 
 form {
   max-width: 360px;
@@ -26,9 +26,25 @@ form {
 
 fieldset{
   border: none;
+  padding: 0;
+  margin: 0 12px;
 }
 
+label{
+  display: inline-block;
+  margin: .5em 0;
 
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 3pt 2pt #3D9A8E;
+}
 
 input[type="text"],
 input[type="password"],
@@ -37,24 +53,89 @@ input[type="number"],
 input[type="tel"],
 textarea,
 select {
-  background: whitesmoke;
+  background: #D8D8D8;
   border: none;
   font-size: 16px;
   height: auto;
   margin: 0;
   padding: 15px;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 1em;
+  border-radius: 10px;
+}
+textarea{
+  margin-top: .5em;
 }
 
 input[type="checkbox"],
 input[type="radio"] {
   margin: 0 .75em 1em 0;
 }
+input::placeholder{
+  text-align: right;
+  font-style: italic;
+  padding-right: 1em;
+}
+button {
+  display:block;
+  width: 100%;
+  padding: 1em;
+  border: none;
+  border-radius: 10px;
+  background-color: #3D9A8E;
+  color: white;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+footer{
+  font-style: italic;
+  margin: 1em auto 200px;
+}
+/* ID Styles */
+
+#zip {
+  width: 50%;
+}
+
+#textformat,
+#javanews {
+  margin-bottom: 2em;
+}
+
 
 /* Class Styles */
+.instructions {
+  max-width: 360px;
+  margin: 1.5em auto 5px;
+  text-align: center;
+  padding: 0 12px;
+}
+
+.formhead {
+  margin: 0;
+  color: white;
+  background: #21312F;
+  padding: .75em 0;
+  text-transform: uppercase;
+}
+
 .bolder{
-  margin-top:1em;
+  width: 100%;
+  margin: 0;
+  padding: 1em 0;
   font-size: 1.25em;
   font-weight: bold;
+  border-top: 3px solid #21312F;
+}
+
+.headline {
+  padding-bottom: 2em;
+  margin: 1em 0 0;
+  border-bottom: 8px solid #21312F;
+}
+
+.submit {
+  width: 100%;
+  padding: 2em 12px;
 }
