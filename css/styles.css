@@ -171,6 +171,7 @@ footer{
   .zipbox {
     width: 160px;
     text-align-last: left;
+    text-align: left;
   }
 
   .fill_in{
