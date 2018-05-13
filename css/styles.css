@@ -134,8 +134,52 @@ footer{
   margin: 1em 0 0;
   border-bottom: 8px solid #21312F;
 }
+.zipbox{
+  width: 100%;
+}
 
 .submit {
   width: 100%;
   padding: 2em 12px;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  form,
+  .instructions {
+    max-width: 768px;
+
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="number"],
+  input[type="tel"],
+  select {
+    width: 550px;
+  }
+
+  input::placeholder{
+    text-align-last: right;
+    font-style: italic;
+    padding-right: 1em;
+  }
+
+  label,
+  legend,
+  .zipbox {
+    width: 160px;
+    text-align-last: left;
+  }
+
+  .fill_in{
+    text-align: justify;
+    text-align-last: justify;
+  }
+
+  #zip{
+    width:200px;
+    margin-right: 350px;
+  }
 }
