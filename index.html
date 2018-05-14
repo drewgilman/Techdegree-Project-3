@@ -22,11 +22,11 @@
       <fieldset class="fill_in">
         <legend class="bolder">Contact Information</legend>
         <label for="name">Full Name</label>
-        <input type="text" id="name" name="user_name" placeholder="Required">
+        <input type="text" id="name" name="user_name" placeholder="Required" required>
         <label for="mail">E-mail Address</label>
-        <input type="email" id="mail" name="user_email" placeholder="Required">
+        <input type="email" id="mail" name="user_email" placeholder="Required" required>
         <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="user_phone">
+        <input type="tel" id="phone" name="user_phone" placeholder="123-456-7890">
         <label for="address">Street Address</label>
         <input type="text" id="address" name="user_address">
         <label for="city">City</label>
@@ -90,22 +90,22 @@
         <input type="text" id="zip" name="user_zip">
       </fieldset>
 
-      <fieldset>
+      <fieldset class="newsletter">
       <legend class="bolder">Newsletter</legend>
-      <p>Select the newsletter you would like to receive</p><br>
+      <label class="checkradio">Select the newsletter you would like to receive</label>
       <input type="checkbox" id="htmlnews" value="htmlnews" name="user_newsselect">
       <label for=htmlnews>HTML News</label><br>
       <input type="checkbox" id="cssnews" value="cssnews" name="user_newsselect">
       <label for=cssnews>CSS News</label><br>
       <input type="checkbox" id="javanews" value="javanews" name="user_newsselect">
       <label for=javanews>Javascript News</label><br>
-      <label>Newsletter Format</label><br>
+      <label class="checkradio">Newsletter Format</label>
       <input type="radio" id="htmlformat" value="htmlformat" name="user_format">
       <label for="htmlformat">HTML</label><br>
       <input type="radio" id="textformat" value="textformat" name="user_format">
       <label for="textformat">Plain Text</label><br>
-      <p>Other topics you'd like to hear about</p>
-      <textarea id="othertopics" name="user_othertopics"></textarea>
+      <label for="othertopics" class="checkradio">Other topics you'd like to hear about</label>
+      <textarea id="othertopics" name="user_othertopics" placeholder="Don't be shy, let us know!"></textarea>
       </fieldset>
       <div class="submit">
         <button type="submit">Sign Up</button>

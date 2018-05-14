@@ -1,6 +1,7 @@
 /* Global Layout Set-up */
 * {
   box-sizing: border-box;
+
   /* outline: 1px red solid; */
 }
 
@@ -9,7 +10,7 @@ body {
   padding: 0;
   text-align: center;
   font-family: 'Raleway', sans-serif;
-  background: white;
+  background-color: #DAEEEB;
 }
 
 p{
@@ -22,6 +23,8 @@ form {
   max-width: 360px;
   text-align: left;
   margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
 }
 
 fieldset{
@@ -44,6 +47,8 @@ textarea:focus,
 select:focus {
   outline: none;
   box-shadow: 0 0 3pt 2pt #3D9A8E;
+  background-color: white;
+  transition: .5s;
 }
 
 input[type="text"],
@@ -62,6 +67,7 @@ select {
   width: 100%;
   margin-bottom: 1em;
   border-radius: 10px;
+  text-align-last: left;
 }
 textarea{
   margin-top: .5em;
@@ -72,7 +78,7 @@ input[type="radio"] {
   margin: 0 .75em 1em 0;
 }
 input::placeholder{
-  text-align: right;
+  text-align-last: right;
   font-style: italic;
   padding-right: 1em;
 }
@@ -110,6 +116,8 @@ footer{
   margin: 1.5em auto 5px;
   text-align: center;
   padding: 0 12px;
+  background-color: white;
+  border-radius: 10px;
 }
 
 .formhead {
@@ -129,6 +137,7 @@ footer{
   border-top: 3px solid #21312F;
 }
 
+
 .headline {
   padding-bottom: 2em;
   margin: 1em 0 0;
@@ -136,6 +145,14 @@ footer{
 }
 .zipbox{
   width: 100%;
+}
+.newsletter{
+
+}
+.checkradio{
+  display: block;
+  width: 100%;
+  margin: 1em  0;
 }
 
 .submit {
@@ -183,4 +200,5 @@ footer{
     width:200px;
     margin-right: 350px;
   }
+
 }
